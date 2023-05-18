@@ -1,18 +1,46 @@
 # Licensed to the Apache Software Foundation (ASF) under one or more
-# contributor license agreements. See the NOTICE file distributed with
+# contributor license agreements.  See the NOTICE file distributed with
 # this work for additional information regarding copyright ownership.
-# The ASF licenses this file to You under the Apache license, Version 2.0
+# The ASF licenses this file to You under the Apache License, Version 2.0
 # (the "License"); you may not use this file except in compliance with
-# the License. You may obtain a copy of the License at
+# the License.  You may obtain a copy of the License at
 #
 #      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the license for the specific language governing permissions and
-# limitations under the license.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
+
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow helps you trigger a SonarCloud analysis of your code and populates
+# GitHub Code Scanning alerts with the vulnerabilities found.
+# Free for open source project.
+
+# 1. Login to SonarCloud.io using your GitHub account
+
+# 2. Import your project on SonarCloud
+#     * Add your GitHub organization first, then add your repository as a new project.
+#     * Please note that many languages are eligible for automatic analysis,
+#       which means that the analysis will start automatically without the need to set up GitHub Actions.
+#     * This behavior can be changed in Administration > Analysis Method.
+#
+# 3. Follow the SonarCloud in-product tutorial
+#     * a. Copy/paste the Project Key and the Organization Key into the args parameter below
+#          (You'll find this information in SonarCloud. Click on "Information" at the bottom left)
+#
+#     * b. Generate a new token and add it to your Github repository's secrets using the name SONAR_TOKEN
+#          (On SonarCloud, click on your avatar on top-right > My account > Security
+#           or go directly to https://sonarcloud.io/account/security/)
+
+# Feel free to take a look at our documentation (https://docs.sonarcloud.io/getting-started/github/)
+# or reach out to our community forum if you need some help (https://community.sonarsource.com/c/help/sc/9)
 
 name: SonarCloud
 on:
