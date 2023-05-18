@@ -71,6 +71,7 @@ Supported protocols include: Echo, Finger, FTP, NNTP, NTP, POP3(S), SMTP(S), Tel
         <commons.net.trace_calls>false</commons.net.trace_calls>
         <commons.net.add_listener>false</commons.net.add_listener>
 
+        <!-- Sonarcloud -->
         <sonar.organization>7admiral23</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
